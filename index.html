@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elías Pro Games - Redes Sociales</title>
+    <style>
+        /* Estilos base */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: url('mono.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            backdrop-filter: brightness(0.6);
+            animation: fadeInBody 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            animation: slideDown 1s ease;
+        }
+
+        p {
+            margin-bottom: 30px;
+            font-size: 1.2em;
+            animation: fadeInText 2s ease;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 350px;
+            width: 90%;
+            animation: fadeInLinks 2s ease;
+        }
+
+        .social-links a {
+            display: block;
+            padding: 16px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 16px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.3em;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(4px);
+        }
+
+        .social-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+            border-color: white;
+            box-shadow: 0 0 15px rgba(255,255,255,0.4);
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #ccc;
+            animation: fadeInText 2s ease;
+        }
+
+        /* Animaciones */
+        @keyframes fadeInBody {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInText {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInLinks {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            h1 { font-size: 2.2em; }
+            .social-links a { font-size: 1.1em; padding: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Elías Pro Games</h1>
+    <p>Conéctate conmigo en todas mis plataformas:</p>
+
+    <div class="social-links">
+        <a href="https://youtube.com/@eliasprogames?si=d2y-MRAeSRgLB1EP" target="_blank">📺 YouTube</a>
+        <a href="https://www.instagram.com/epg_ig?igsh=Y3hpaWh6eHcxaTht" target="_blank">📷 Instagram</a>
+        <a href="https://discord.com/invite/6V2N236NSZ" target="_blank">💬 Discord</a>
+        <a href="https://open.spotify.com/show/40kVpDyEHhEDQKCHzGwpfC?si=qnINt0w8R5-pgsI9Rw8GJg" target="_blank">🎧 Podcast en Spotify</a>
+    </div>
+
+    <footer>
+        © 2025 Elías Pro Games. Todos los derechos reservados.
+    </footer>
+    <h6>pagina creada por el faze taco</h6>
+    <h6>contacto: tacogodfn@gmail.com</h6>
+    
+</body>
+</html>
